@@ -12,7 +12,7 @@ else:
 forceViewMode=False
 viewMode=str(settings.getSetting("viewMode"))
 def index():
-addDir("Visual Radio","XXXXXXXXX',"")
+addDir("Visual Radio","http://mp3-live.dasding.de/dasding_m.m3u',"")
 elif mode == 'playAudio':
 playAudio(url)
 else:
