@@ -4,9 +4,9 @@ import xbmcplugin
 
 addon_handle = int(sys.argv[1])
 
-xbmcplugin.setContent(addon_handle, 'movies')
+xbmcplugin.setContent(addon_handle, 'audio')
 
-url = 'http://localhost/some_video.mkv'
+url = 'http://mp3-live.dasding.de/dasding_m.m3u'
 li = xbmcgui.ListItem(label='Livestream', iconImage='icon.png', thumbnailImage='thumbnail.png')
 xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
 
