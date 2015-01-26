@@ -9,4 +9,8 @@ li.setIconImage('icon.png')
 li.setThumbnailImage('icon.png')
 li.setProperty('fanart_image', 'visualradio.png')
 xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
+url = 'http://swrdasding-lh.akamaihd.net/z/dasdingvisual_live@6416/manifest.f4m'
+li = xbmcgui.ListItem(label='HDS Stream Visual Radio')
+li.setProperty('fanart_image', 'visualradio.png')
+xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
 xbmcplugin.endOfDirectory(addon_handle)
