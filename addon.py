@@ -11,5 +11,7 @@ li = xbmcgui.ListItem(label='HLS Stream Visual Radio', iconImage='icon.png', thu
 xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
 url = 'http://swrdasding-lh.akamaihd.net/z/dasdingvisual_live@6416/manifest.f4m'
 li = xbmcgui.ListItem(label='HDS Stream Visual Radio', iconImage='icon.png', thumbnailImage='visualradio.png')
+li.setProperty('fanart_image', 'visualradio.png')
 xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
+
 xbmcplugin.endOfDirectory(addon_handle)
