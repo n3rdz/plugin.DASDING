@@ -16,6 +16,6 @@
     <forum></forum>
     <website>www.dasding.de</website>
     <email></email>
-    <source>https://github.com/n3rdz/plugin.DASDING</source>
+    <source>https://github.com/n3rdz/plugin.DASDING.git</source>
   </extension>
 </addon>
