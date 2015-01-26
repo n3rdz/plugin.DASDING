@@ -4,16 +4,10 @@ import xbmcplugin
 
 addon_handle = int(sys.argv[1])
 
-xbmcplugin.setContent(addon_handle, 'audio')
+xbmcplugin.setContent(addon_handle, 'video')
 
 url = 'http://swrdasding-lh.akamaihd.net/i/dasdingvisual_live@6416/master.m3u8'
 li = xbmcgui.ListItem(label='HLS Stream Visual Radio')
-li.setIconImage('icon.png')
-li.setThumbnailImage('icon.png')
-li.setProperty('fanart_image', 'visualradio.png')
-xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
-url = 'http://swrdasding-lh.akamaihd.net/z/dasdingvisual_live@6416/manifest.f4m'
-li = xbmcgui.ListItem(label='HDS Stream Visual Radio')
 li.setIconImage('icon.png')
 li.setThumbnailImage('icon.png')
 li.setProperty('fanart_image', 'visualradio.png')
