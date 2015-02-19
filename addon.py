@@ -9,19 +9,4 @@ li.setIconImage('DefaultVideo.png')
 li.setThumbnailImage('icon.png')
 li.setProperty('fanart_image', 'visualradio.png')
 xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
-url = 'http://mp3-live.dasding.de/dasding_m.m3u'
-li = xbmcgui.ListItem(label='DASDING Radio Livestream 128kbit m3u')
-xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
-url = 'http://swr.ic.llnwd.net:80/stream/swr_mps_m_dasdinga'
-li = xbmcgui.ListItem(label='DASDING Radio 5.1 Surround Livestream')
-xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
-url = 'http://mp3-live.dasding.de/dasdingraka01_m.m3u'
-li = xbmcgui.ListItem(label='Lautstark nachhören 128kbit m3u')
-xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
-url = 'http://mp3-live.dasding.de/dasdingraka02_m.m3u'
-li = xbmcgui.ListItem(label='Sprechstunde nachhören 128kbit m3u')
-xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
-url = 'http://mp3-live.dasding.de/dasdingraka03_m.m3u'
-li = xbmcgui.ListItem(label='Plattenleger nachhören 128kbit m3u')
-xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
 xbmcplugin.endOfDirectory(addon_handle)
